@@ -1,4 +1,4 @@
-
+# converts military time to metric time
 import sys
 
 def main():

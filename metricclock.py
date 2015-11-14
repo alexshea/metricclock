@@ -1,4 +1,3 @@
-# converts military time to metric time
 import sys
 
 def main():
@@ -22,10 +21,10 @@ def main():
     print("Invalid time")
     return 0
 
-  modmin = float((normalhour%2.4)*60) # number leftover minutes after modding hour
-  metricmodmin = modmin * (100/144) # metric minute conversion
-  metricnormalmin = float(normalmin * (100/144))
-  newmin = int(metricnormalmin + metricmodmin)
+  modmin = float((normalhour%2.4)*60)
+  metricmodmin = modmin * (100/144) 
+  metricnonmodmin = float(normalmin * (100/144))
+  newmin = int(metricnonmodmin + metricmodmin)
   
   if newmin > 99:
     newmin = newmin - 100
@@ -40,7 +39,7 @@ def main():
   print("Normal time is " + normaltime)
   print("Metric time is " + metrichour+metricmin)
 
-#if __name__ == __'metricclock.py'__:
+#if __name__ == __'main'__:
 main()
 
 #0000 0100 0200 0300 0400 0500 0600 0700 0800 0900

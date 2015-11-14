@@ -40,7 +40,7 @@ def main():
   print("Normal time is " + normaltime)
   print("Metric time is " + metrichour+metricmin)
 
-#if __name__ == __'main'__:
+#if __name__ == __'metricclock.py'__:
 main()
 
 #0000 0100 0200 0300 0400 0500 0600 0700 0800 0900
